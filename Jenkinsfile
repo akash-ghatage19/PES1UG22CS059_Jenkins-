@@ -5,7 +5,7 @@ pipeline {
         stage('Build') {
             steps {
                 script {
-                    sh 'g++ -o output PES1UG22CS059-pp'  // Compile C++ file
+                    sh 'g++ -o output PES1UG22CS0-pp'  // Compile C++ file
                 }
             }
         }
@@ -13,7 +13,7 @@ pipeline {
         stage('Test') {
             steps {
                 script {
-                    sh './output'  // Run the compiled program
+                    sh './oput'  // Run the compiled program
                 }
             }
         }
